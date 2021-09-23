@@ -49,7 +49,7 @@ func init() {
 
 		c.Key = "0123456789abcdef"
 		c.Port = 9090
-		c.Client.Url = "localhost"
+		c.Client.Url = "http://localhost:9090/update"
 
 		if err := toml.NewEncoder(file).Encode(c); err != nil {
 			log.Fatal(err)
