@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"path/filepath"
@@ -71,5 +72,8 @@ func main() {
 
 	case "client":
 		runClient(c.Client.Url, c.Key)
+
+	case "init":
+		fmt.Println("Config file created at: ~/.config/valse/config.toml")
 	}
 }
