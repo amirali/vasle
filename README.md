@@ -2,21 +2,21 @@
 
 ## Installation
 ```
-go get github.com/amirali/valse
+go get github.com/amirali/vasle
 ```
 
 ## Usage
 ### Initialize config file
 ```
-valse init
+vasle init
 ```
 
 ### Change configs
-Change your port, key and url endpoint in config file located at `~/.config/valse/config.toml`
+Change your port, key and url endpoint in config file located at `~/.config/vasle/config.toml`
 
 ### Run server:
 ```
-valse server
+vasle server
 ```
 
 ### Run client:
