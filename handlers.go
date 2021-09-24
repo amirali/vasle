@@ -3,13 +3,17 @@ package main
 import (
 	"log"
 	"net/http"
-	"strconv"
 	"time"
 )
 
 func RootHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(strconv.FormatBool(status)))
+
+	if status == true {
+		w.Write([]byte("Online"))
+	} else {
+		w.Write([]byte("Offline"))
+	}
 }
 
 func UpdateStatusHandler(w http.ResponseWriter, r *http.Request) {
