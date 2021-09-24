@@ -1,5 +1,4 @@
 # Vasle
-Checking your machine is connect to internet or not
 
 ## Installation
 ```
