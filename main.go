@@ -10,7 +10,7 @@ import (
 	"github.com/BurntSushi/toml"
 )
 
-var configPath = os.Getenv("HOME") + "/.config/valse/"
+var configPath = os.Getenv("HOME") + "/.config/vasle/"
 var configFile = configPath + "config.toml"
 
 type configSchema struct {
@@ -74,6 +74,6 @@ func main() {
 		runClient(c.Client.Url, c.Key)
 
 	case "init":
-		fmt.Println("Config file created at: ~/.config/valse/config.toml")
+		fmt.Println("Config file created at: ~/.config/vasle/config.toml")
 	}
 }
